@@ -1,3 +1,4 @@
+#!/bin/bash -x
 read -p "enter a number:" num
 if ((${#num} ==4))
 then
