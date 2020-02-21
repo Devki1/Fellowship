@@ -1,3 +1,4 @@
+#!/bin/bash -x
 read -p "enter a single digit:" number
 if (( number<=9 ))
 then
