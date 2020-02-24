@@ -1,22 +1,26 @@
 #!/bin/bash -x
+#Generate a prime number from minimum value to maximum value
 read -p "enter a minimum:" min
+#Take a minimum input from the user
 read -p "enter a maximum:" max
-for((number=$min; number<=$max; number++))
+#Take a maximum value by a user
+#Iterate the value from min to max in a loop
+for((iter=$min; iter<=$max; iter++))
 do
 	flag=0
-	if(($number==1))
+	if(($iter==1))
 	then
-		flag=1
+	flag=1
 	fi
-	for((num=2; num<=$number/2; num++))
+	for((number=2; number<=$iter/2; number++))
 	do
-		if(($((number%num)) == 0))
+		if(($((iter%number)) == 0))
 		then
 			flag=1
 		fi
 	done
-	if(($flag == 0))
-	then
-		echo "$number"
-	fi
+		if(($flag == 0))
+		then
+			echo "$iter"
+		fi
 done
