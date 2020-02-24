@@ -16,4 +16,4 @@ do
 			((count++))
 	fi
 done
-	echo ${ArrayNumber[@]}
+echo ${ArrayNumber[@]}
