@@ -1,10 +1,12 @@
 #!/bin/bash -x
+#Find the factorial number
 echo "enter a number"
-read num 
+#Take a number from the user
+read number 
 fact=1
-		for(( i=1;i<=$num;i++))
-		do
-		fact=$(($fact*$i))
-		
+#Logic for print a factorial number
+for(( iteration=1;iteration<=$number;iteration++))
+do	
+	fact=$(($fact*$iteration))		
 done
-		echo $fact
+echo $fact
