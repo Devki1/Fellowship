@@ -1,40 +1,41 @@
 #!/bin/bash -x
+#Take a input from a user 
 read -p "enter a single digit:" number
 if (( number<=9 ))
 then
-    if ((number == 0 ))
-    then
-         echo "zero"
-     elif ((number == 1 ))
-     then
-         echo "one"
-     elif ((number == 2 ))
-      then
-         echo "two"
-    elif ((number == 3 ))
-     then
-         echo "three"
-     elif ((number == 4 ))
-      then
-         echo "four"
-    elif ((number == 5 ))
-     then
-         echo "five"
-     elif ((number == 6 ))
-      then
-         echo "six"
-    elif ((number == 7 ))
-     then
-         echo "seven"
-     elif ((number == 8 ))
-      then
-         echo "eight"
-     elif ((number == 9 ))
-     then
-         echo "nine"
-     fi
+if ((number == 0 )
+then
+	echo "Zero"
+elif ((number == 1 ))
+then
+	echo "One"
+elif ((number == 2 ))
+then
+	echo "Two"
+elif ((number == 3 ))
+then
+	echo "Three"
+elif ((number == 4 ))
+then
+	echo "Four"
+elif ((number == 5 ))
+then
+	echo "Five"
+elif ((number == 6 ))
+then
+	echo "Six"
+elif ((number == 7 ))
+then
+	echo "Seven"
+elif ((number == 8 ))
+then
+	echo "Eight"
+elif ((number == 9 ))
+then
+	echo "Nine"
+fi
 else
-    echo "invalid number"
+	echo "Invalid number"
 fi
     
     
