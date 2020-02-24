@@ -1,8 +1,11 @@
 #!/bin/bash -x
-number=$1
+#Take a number from a user
+echo "enter a number"
+read number
 power=1
-for(( count=1; count<=$number;count++ ))
+#logic to print power of 2
+for(( iter=1; iter<=$number+1;iter++ ))
 do
-		power=$((count*2))
-		echo "$power"
+	echo $power
+	power=$((power*2))
 done
