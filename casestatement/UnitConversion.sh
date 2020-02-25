@@ -1,7 +1,8 @@
 #!/bin/bash -x
-echo "enter a number 1 to 4"
-read number
-case $number in
+#Unit conversion of different length units
+echo "enter a choice 1 to 4"
+read choice
+case $choice in
   	1)
 	echo "convert feet into inch"
 	echo "enter feet"
